@@ -11,10 +11,12 @@
 </head>
 <script type="text/javascript">
 
-function scrl(id) {
+function scrl(id, mnav) {
 
     var elem = document.getElementById(id);
     window.scroll({left: 0, top: elem.offsetTop, behavior: 'smooth'});
+
+    if(mnav != 0) closemnav();
 }
 
 function opennav() {
@@ -29,28 +31,57 @@ function closenav() {
     elem.style.transform = "translate(-90%, 0)";
 }
 
+function openmnav() {
+    var elem = document.getElementById('mnav');
+    elem.style.display = "block";
+}
+
+function closemnav() {
+    var elem = document.getElementById('mnav');
+    elem.style.display = "none";
+}
+
 </script>
 
 <body>
 
+    <nav id="mnav">
+        <div class="mcbtn" onclick="closemnav();">X</div>
+        <div class="navitem" onclick="scrl('mission', 1);">OUR MISSION</div>
+        <div class="navitem" onclick="scrl('believe', 1);">WE BELIEVE IN</div>
+        <div class="navitem" onclick="scrl('method', 1);">OUR METHOD</div>
+        <div class="navitem" onclick="scrl('program', 1);">THE PROGRAM</div>
+        <!-- <div class="navitem" onclick="scrl('toolbox', 1);">CHANGEMAKER'S TOOLBOX</div> -->
+        <!-- <div class="navitem" onclick="scrl('impact', 1);">MAKING IMPACT</div> -->
+        <div class="navitem" onclick="scrl('done', 1);">WHEN I'M DONE</div>
+        <div class="navitem" onclick="scrl('system', 1);">FOLK HIGH SCHOOL</div>
+        <div class="navitem" onclick="scrl('vaddo', 1);">VÄDDÖ FOLKHÖGSKOLA</div>
+        <div class="navitem" onclick="scrl('financing', 1);">COST &amp; FINANCING</div>
+        <div class="navitem" onclick="scrl('forme', 1);">IS THIS FOR ME?</div>
+        <div class="navitem" onclick="scrl('apply', 1);">HOW TO APPLY</div>
+        <!-- <div class="navitem" onclick="scrl('knowmore', 1);">TELL ME MORE</div> -->
+        <div class="navitem" onclick="scrl('contact', 1);">CONTACT</div>
+    </nav>
+
     <nav id="ccnav" onmouseover="opennav();" onmouseleave="closenav();">
-        <div class="navitem" onclick="scrl('mission');">OUR MISSION</div>
-        <div class="navitem" onclick="scrl('believe');">WE BELIEVE IN</div>
-        <div class="navitem" onclick="scrl('method');">OUR METHOD</div>
-        <div class="navitem" onclick="scrl('program');">THE PROGRAM</div>
-        <!-- <div class="navitem" onclick="scrl('toolbox');">CHANGEMAKER'S TOOLBOX</div> -->
-        <!-- <div class="navitem" onclick="scrl('impact');">MAKING IMPACT</div> -->
-        <div class="navitem" onclick="scrl('done');">WHEN I'M DONE</div>
-        <div class="navitem" onclick="scrl('system');">FOLK HIGH SCHOOL</div>
-        <div class="navitem" onclick="scrl('vaddo');">VÄDDÖ FOLKHÖGSKOLA</div>
-        <div class="navitem" onclick="scrl('financing');">COST &amp; FINANCING</div>
-        <div class="navitem" onclick="scrl('forme');">IS THIS FOR ME?</div>
-        <div class="navitem" onclick="scrl('apply');">HOW TO APPLY</div>
-        <div class="navitem" onclick="scrl('knowmore');">TELL ME MORE</div>
-        <div class="navitem" onclick="scrl('contact');">CONTACT</div>
+        <div class="navitem" onclick="scrl('mission', 0);">OUR MISSION</div>
+        <div class="navitem" onclick="scrl('believe', 0);">WE BELIEVE IN</div>
+        <div class="navitem" onclick="scrl('method', 0);">OUR METHOD</div>
+        <div class="navitem" onclick="scrl('program', 0);">THE PROGRAM</div>
+        <!-- <div class="navitem" onclick="scrl('toolbox', 0);">CHANGEMAKER'S TOOLBOX</div> -->
+        <!-- <div class="navitem" onclick="scrl('impact', 0);">MAKING IMPACT</div> -->
+        <div class="navitem" onclick="scrl('done', 0);">WHEN I'M DONE</div>
+        <div class="navitem" onclick="scrl('system', 0);">FOLK HIGH SCHOOL</div>
+        <div class="navitem" onclick="scrl('vaddo', 0);">VÄDDÖ FOLKHÖGSKOLA</div>
+        <div class="navitem" onclick="scrl('financing', 0);">COST &amp; FINANCING</div>
+        <div class="navitem" onclick="scrl('forme', 0);">IS THIS FOR ME?</div>
+        <div class="navitem" onclick="scrl('apply', 0);">HOW TO APPLY</div>
+        <!-- <div class="navitem" onclick="scrl('knowmore', 0);">TELL ME MORE</div> -->
+        <div class="navitem" onclick="scrl('contact', 0);">CONTACT</div>
     </nav>
 
     <div class="mtab" onmouseover="opennav();">MENU</div>
+    <div class="mmbutton" onclick="openmnav();">MENU</div>
 
     <div id="vline"></div>
 <div id="container">

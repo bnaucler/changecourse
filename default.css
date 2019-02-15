@@ -88,6 +88,11 @@ ul {
     padding: 0 30px;
 }
 
+#container {
+    width: 800px;
+    margin: 0 auto;
+}
+
 #ccnav {
     position: fixed;
     display: block;
@@ -191,13 +196,6 @@ ul {
     height: 280px;
 }
 
-.gothisway {
-    background: url("img/gothisway.png") no-repeat center;
-    background-size: contain;
-    height: 400px;
-    margin: 100px 40px 0;
-}
-
 #vlogo {
     background: url("img/v_fhsk_logo_transp.png") no-repeat center;
     background-size: cover;
@@ -206,11 +204,6 @@ ul {
     width: 200px;
     margin: 20px;
     float: right;
-}
-
-.nfloat {
-    clear: both;
-    display: block;
 }
 
 #map {
@@ -238,10 +231,6 @@ ul {
     overflow: hidden;
 }
 
-.teal a {
-    color: #EEE;
-}
-
 .rb { background-color: #DA5232; }
 .tb { background: #0C9CA1; }
 
@@ -250,6 +239,8 @@ ul {
     background: #0C9CA1;
     color: #EEE;
 }
+
+.teal a { color: #EEE; }
 
 .ugap { height: 4px; }
 .smallgap { height: 20px; }
@@ -264,11 +255,6 @@ ul {
     z-index: -1;
 }
 
-#container {
-    width: 800px;
-    margin: 0 auto;
-}
-
 .mmbutton {
     display: none;
     position: fixed;
@@ -280,8 +266,9 @@ ul {
     opacity: .8;
     color: #eee;
     text-align: center;
+    letter-spacing: 2px;
     padding: 10px;
-    width: 80px;
+    width: 70px;
     z-index: 50;
 }
 
@@ -329,6 +316,31 @@ ul {
     p {
         font-size: 1em;
         text-align: left;
+        padding: 10px;
+    }
+    
+    em {
+        font-size: 1.2em;
+        padding: 0;
+    }
+
+    h3 {
+        font-size: 1.6em;
+    }
+
+    ul {
+        font-size: 1em;
+    }
+
+    .hdrlogo {
+        margin: 10px;
+        padding: 10px;
+        height: 120px;
+    }
+
+    #vlogo {
+        float: none; 
+        margin: 10px auto;
     }
 
     .block {
@@ -337,6 +349,11 @@ ul {
 
     .left, .right {
         float: none;
+        font-size: 1em;
+    }
+
+    .iblock {
+        margin: 10px;
     }
 
     .lhgrey, .mtab, #ccnav {

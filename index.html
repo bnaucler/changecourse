@@ -5,18 +5,45 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta http-equiv="Content-Style-Type" content="text/css"/>
     <meta name="generator" content="vim, baby"/>
-    <meta name="description" content="An education in radical improvement; radical change.">
+    <meta name="description" content="Entreprenurship education for changemakers.">
     <title>change course</title>
 	<link rel="stylesheet" type="text/css" href="default.css">
+
+    <!-- Social media preview -->
+    <meta property="og:title" content="change course" />
+    <meta property="og:image" content="http://changecourse.se/img/preview.png" />
+    <meta property="og:description" content="Entreprenurship education for changemakers" />
+    <meta property="og:url" content="http://changecourse.se">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
 </head>
 <script type="text/javascript">
 
-function scrl(id, mnav) {
+function scrl(id) {
 
     var elem = document.getElementById(id);
+    var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
     window.scroll({left: 0, top: elem.offsetTop, behavior: 'smooth'});
 
-    if(mnav != 0) closemnav();
+    if(w < 811) closemnav();
 }
 
 function opennav() {
@@ -47,37 +74,37 @@ function closemnav() {
 
     <nav id="mnav">
         <div class="mcbtn" onclick="closemnav();">X</div>
-        <div class="navitem" onclick="scrl('mission', 1);">OUR MISSION</div>
-        <div class="navitem" onclick="scrl('believe', 1);">WE BELIEVE IN</div>
-        <div class="navitem" onclick="scrl('method', 1);">OUR METHOD</div>
-        <div class="navitem" onclick="scrl('program', 1);">THE PROGRAM</div>
-        <!-- <div class="navitem" onclick="scrl('toolbox', 1);">CHANGEMAKER'S TOOLBOX</div> -->
-        <!-- <div class="navitem" onclick="scrl('impact', 1);">MAKING IMPACT</div> -->
-        <div class="navitem" onclick="scrl('done', 1);">WHEN I'M DONE</div>
-        <div class="navitem" onclick="scrl('system', 1);">FOLK HIGH SCHOOL</div>
-        <div class="navitem" onclick="scrl('vaddo', 1);">VÄDDÖ FOLKHÖGSKOLA</div>
-        <div class="navitem" onclick="scrl('financing', 1);">COST &amp; FINANCING</div>
-        <div class="navitem" onclick="scrl('forme', 1);">IS THIS FOR ME?</div>
-        <div class="navitem" onclick="scrl('apply', 1);">HOW TO APPLY</div>
-        <!-- <div class="navitem" onclick="scrl('knowmore', 1);">TELL ME MORE</div> -->
-        <div class="navitem" onclick="scrl('contact', 1);">CONTACT</div>
+        <div class="navitem" onclick="scrl('mission');">OUR MISSION</div>
+        <div class="navitem" onclick="scrl('believe');">WE BELIEVE IN</div>
+        <div class="navitem" onclick="scrl('method');">OUR METHOD</div>
+        <div class="navitem" onclick="scrl('program');">THE PROGRAM</div>
+        <!-- <div class="navitem" onclick="scrl('toolbox');">CHANGEMAKER'S TOOLBOX</div> -->
+        <!-- <div class="navitem" onclick="scrl('impact');">MAKING IMPACT</div> -->
+        <div class="navitem" onclick="scrl('done');">WHEN I'M DONE</div>
+        <div class="navitem" onclick="scrl('system');">FOLK HIGH SCHOOL</div>
+        <div class="navitem" onclick="scrl('vaddo');">VÄDDÖ FOLKHÖGSKOLA</div>
+        <div class="navitem" onclick="scrl('financing');">COST &amp; FINANCING</div>
+        <div class="navitem" onclick="scrl('forme');">IS THIS FOR ME?</div>
+        <div class="navitem" onclick="scrl('apply');">HOW TO APPLY</div>
+        <!-- <div class="navitem" onclick="scrl('knowmore');">TELL ME MORE</div> -->
+        <div class="navitem" onclick="scrl('contact');">CONTACT</div>
     </nav>
 
     <nav id="ccnav" onmouseover="opennav();" onmouseleave="closenav();">
-        <div class="navitem" onclick="scrl('mission', 0);">OUR MISSION</div>
-        <div class="navitem" onclick="scrl('believe', 0);">WE BELIEVE IN</div>
-        <div class="navitem" onclick="scrl('method', 0);">OUR METHOD</div>
-        <div class="navitem" onclick="scrl('program', 0);">THE PROGRAM</div>
-        <!-- <div class="navitem" onclick="scrl('toolbox', 0);">CHANGEMAKER'S TOOLBOX</div> -->
-        <!-- <div class="navitem" onclick="scrl('impact', 0);">MAKING IMPACT</div> -->
-        <div class="navitem" onclick="scrl('done', 0);">WHEN I'M DONE</div>
-        <div class="navitem" onclick="scrl('system', 0);">FOLK HIGH SCHOOL</div>
-        <div class="navitem" onclick="scrl('vaddo', 0);">VÄDDÖ FOLKHÖGSKOLA</div>
-        <div class="navitem" onclick="scrl('financing', 0);">COST &amp; FINANCING</div>
-        <div class="navitem" onclick="scrl('forme', 0);">IS THIS FOR ME?</div>
-        <div class="navitem" onclick="scrl('apply', 0);">HOW TO APPLY</div>
-        <!-- <div class="navitem" onclick="scrl('knowmore', 0);">TELL ME MORE</div> -->
-        <div class="navitem" onclick="scrl('contact', 0);">CONTACT</div>
+        <div class="navitem" onclick="scrl('mission');">OUR MISSION</div>
+        <div class="navitem" onclick="scrl('believe');">WE BELIEVE IN</div>
+        <div class="navitem" onclick="scrl('method');">OUR METHOD</div>
+        <div class="navitem" onclick="scrl('program');">THE PROGRAM</div>
+        <!-- <div class="navitem" onclick="scrl('toolbox');">CHANGEMAKER'S TOOLBOX</div> -->
+        <!-- <div class="navitem" onclick="scrl('impact');">MAKING IMPACT</div> -->
+        <div class="navitem" onclick="scrl('done');">WHEN I'M DONE</div>
+        <div class="navitem" onclick="scrl('system');">FOLK HIGH SCHOOL</div>
+        <div class="navitem" onclick="scrl('vaddo');">VÄDDÖ FOLKHÖGSKOLA</div>
+        <div class="navitem" onclick="scrl('financing');">COST &amp; FINANCING</div>
+        <div class="navitem" onclick="scrl('forme');">IS THIS FOR ME?</div>
+        <div class="navitem" onclick="scrl('apply');">HOW TO APPLY</div>
+        <!-- <div class="navitem" onclick="scrl('knowmore');">TELL ME MORE</div> -->
+        <div class="navitem" onclick="scrl('contact');">CONTACT</div>
     </nav>
 
     <div class="mtab" onmouseover="opennav();">MENU</div>
@@ -258,8 +285,8 @@ function closemnav() {
     <div id="financing" class="block tealwhite">
         <h3 class="tb">COST &amp; FINANCING</h3>
         <p>
-            The course is delivered through the Swedish folk high school system, and is
-            completely free of charge for EU citizens. If you are not an EU citizen, please
+            The course is delivered through the Swedish folk high school system, and
+            <b>completely free of charge</b> for EU citizens. If you are not an EU citizen, please
             <a href="mailto:info@changecourse.se">contact us directly</a> to discuss your options before applying.
             <br><br>
             Swedish students will be granted funding and loan from CSN to cover costs of
@@ -309,15 +336,16 @@ reform the world? (You can.)</em></p>
         <h3 class="tb">HOW TO APPLY</h3>
         <p>
             Does this sound interesting to you? Great!<br><br>
-            We are currently accepting applications for <b>The Changemaker's Toolbox</b>.
-            The application window closes 30 April 2019. Make sure we receive your
-            application in time! Applications for <b>Making Impact</b> will open early 2020.
+            We are currently accepting applications for <a href="javascript:void(0);" onclick="scrl('toolbox')">The Changemaker's Toolbox</a>.
+            <b>The application window closes 15 May 2019. Make sure we receive your
+            application in time!</b> Applications for <a href="javascript:void(0);" onclick="scrl('impact')">Making Impact</a> will open early 2020.
             <br><br>
             To apply, fill in <a href="cc_application_2019.pdf">this
             form</a> and send it to us via email or post (the fancy signup machine is being
             constructed in the background as we speak).
             <br><br>
-            Together with the filled-in form, we encourage you to attach any kind of
+            Together with the filled-in form, attach grades from previous educations as well 
+            as relevant work certificates and references. We also encourage you to attach any kind of
             material which would make a good case for selecting you as a participant.
             <br><br>
             Send your application digitally to <a href="mailto:apply@changecourse.se">apply@changecourse.se</a> or via post to:<br>
@@ -329,7 +357,7 @@ reform the world? (You can.)</em></p>
             <br><br>
             If we choose to move forward with your application you will be contacted to
             book an interview, either onsite at the school or via video link. Interviews
-            will be conducted during the month of May.
+            will be conducted during May and early June.
         </p>
     </div>
 

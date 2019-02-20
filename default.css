@@ -10,7 +10,7 @@
  *
  */
 
-aside, article, section, header, footer, nav, html, body, p, h1, h2, h3, div, ul, li, iframe, pre {
+aside, article, section, header, footer, nav, html, body, p, h1, h2, h3, div, ul, li, iframe, pre, table, th, tr {
     margin: 0;
     padding: 0;
 }
@@ -88,10 +88,23 @@ ul {
     padding: 0 30px;
 }
 
+table {
+    font-size: 1.3em;
+    text-align: left;
+    padding: 0 30px 30px;
+}
+
+th {
+    padding-right: 40px;
+    font-weight: 200;
+}
+
 #container {
     width: 800px;
     margin: 0 auto;
 }
+
+.nobottom { padding-bottom: 0; }
 
 #ccnav {
     position: fixed;
@@ -162,6 +175,7 @@ ul {
 
 .left { float: left; }
 .right { float: right;}
+.clear { clear: both;}
 
 .hdrlogo {
     background: url("img/hdr_l_grey_transp.png") no-repeat center;
@@ -330,6 +344,16 @@ ul {
 
     ul {
         font-size: 1em;
+    }
+
+    table {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    th {
+        padding-right: 10px;;
+
     }
 
     .hdrlogo {

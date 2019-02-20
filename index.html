@@ -48,9 +48,18 @@
 
     function scrl(id) {
 
-        var elem = document.getElementById(id);
+        var pos = document.getElementById(id).offsetTop;
         var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-        window.scroll({left: 0, top: elem.offsetTop, behavior: 'smooth'});
+
+        if('scrollBehavior' in document.documentElement.style) {
+            window.scroll({
+                top : pos,
+                left : 0,
+                behavior : 'smooth'
+            });
+        } else {
+            window.scroll(0, pos);
+        }
 
         if(w < 811) closemnav();
     }

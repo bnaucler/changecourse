@@ -41,46 +41,45 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'UA-134871303-1');
     </script>
 
+    <script type="text/javascript">
+
+    function scrl(id) {
+
+        var elem = document.getElementById(id);
+        var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+        window.scroll({left: 0, top: elem.offsetTop, behavior: 'smooth'});
+
+        if(w < 811) closemnav();
+    }
+
+    function opennav() {
+
+        var elem = document.getElementById('ccnav');
+        elem.style.transform = "translate(0, 0)";
+    }
+
+    function closenav() {
+
+        var elem = document.getElementById('ccnav');
+        elem.style.transform = "translate(-90%, 0)";
+    }
+
+    function openmnav() {
+        var elem = document.getElementById('mnav');
+        elem.style.display = "block";
+    }
+
+    function closemnav() {
+        var elem = document.getElementById('mnav');
+        elem.style.display = "none";
+    }
+
+    </script>
+
 </head>
-<script type="text/javascript">
-
-function scrl(id) {
-
-    var elem = document.getElementById(id);
-    var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-    window.scroll({left: 0, top: elem.offsetTop, behavior: 'smooth'});
-
-    if(w < 811) closemnav();
-}
-
-function opennav() {
-
-    var elem = document.getElementById('ccnav');
-    elem.style.transform = "translate(0, 0)";
-}
-
-function closenav() {
-
-    var elem = document.getElementById('ccnav');
-    elem.style.transform = "translate(-90%, 0)";
-}
-
-function openmnav() {
-    var elem = document.getElementById('mnav');
-    elem.style.display = "block";
-}
-
-function closemnav() {
-    var elem = document.getElementById('mnav');
-    elem.style.display = "none";
-}
-
-</script>
-
 <body>
 
     <nav id="mnav">

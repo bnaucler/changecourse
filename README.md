@@ -6,4 +6,4 @@ Website contents for [changecourse.se](http://changecourse.se)
 Björn Westerberg Nauclér (bnaucler@vaddo.fhsk.se) 2019
 
 ## License
-https://creativecommons.org/licenses/by/4.0/legalcode
+https://creativecommons.org/publicdomain/zero/1.0/

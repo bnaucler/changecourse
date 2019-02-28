@@ -27,6 +27,8 @@ body {
     background-size: cover;
     font-family: 'Roboto Slab', serif;
     color: #0F2B38;
+    height:100%;
+    width:100%;
 }
 
 a {

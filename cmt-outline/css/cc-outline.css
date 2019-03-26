@@ -1,0 +1,144 @@
+
+/* color reference chart
+ *
+ * blue: #0F2B38;
+ * red: #DA5232;
+ * yellow: #FDB83F;
+ * teal: #0C9CA1;
+ * grey: #EEE;
+ *
+ */
+
+#navinfo {
+	white-space: pre;
+	position: fixed;
+	bottom: 20px;
+	left: 0;
+	padding: 0 20px;
+	text-align: left;
+	font-size: 14px;
+	font-weight: bold;
+	border-radius: 8px;
+}
+
+.reveal .olcontainer {
+	background-color: #eee;
+	border: 4px #0C9CA1 solid;
+	border-radius: 8px;
+	width: 100%;
+}
+
+.reveal .oldate {
+	text-align: right;
+	font-family: "PT Mono", Courier, monospace;
+	margin: 0;
+	padding: 10px 20px;
+	border-radius: 0 0 0 8px;
+	font-size: .5em;
+	float: right;
+	width: 20%;
+}
+
+.reveal .left {
+	margin: .5em 0;
+	padding: 0 .7em;
+	text-align: left;
+}
+
+.mgap {
+	display: block;
+	height: 1.3em;
+}
+
+.sgap {
+	display: block;
+	height: 1.2em;
+}
+
+.reveal .hbtn {
+	display: block;
+	background-color: #0C9CA1;
+	float: left;
+	height: 1em;
+	width: 1em;
+	border-radius: 0 8px 0 0;
+	margin-top: .2em;
+}
+
+.reveal .hicon {
+	display: block;
+	background: url("../img/home.png") no-repeat center;
+	background-size: contain;
+	height: .7em;
+	width: .7em;
+	margin: .2em .2em .1em .1em;
+}
+
+.reveal .sembanner {
+	display: table-cell;
+	height: 100%;
+	width: 10%;
+}
+
+.reveal .icontainer {
+	display: table-cell;
+	overflow: hidden;
+	font-size: .4em;
+	text-align: left;
+	color: #0C9CA1;
+	width: 46%;
+	height: 100%;
+	text-align: left;
+	padding: 1em;
+}
+
+.reveal .icontainer a {
+	color: #0C9CA1;
+}
+
+table, tbody, thead, tr {
+	width: 100%;
+}
+
+th {
+	width: 20%;
+	border-radius: 0 0 8px 8px;
+}
+
+.reveal p {
+	font-size: .8em;
+}
+
+.reveal .clear {
+	clear: both;
+}
+
+.reveal .redwhite {
+	color: #DA5232;
+	background-color: #eee;
+}
+
+.reveal .tealwhite {
+	color: #0C9CA1;
+	background-color: #eee;
+}
+
+.reveal .yellowwhite {
+	color: #FDB83F;
+	background-color: #eee;
+}
+
+.reveal .whitered {
+	color: #eee;
+	background-color: #DA5232;
+}
+
+.reveal .whiteteal {
+	color: #eee;
+	background-color: #0C9CA1;
+}
+
+.reveal .whiteyellow {
+	color: #eee;
+	background-color: #FDB83F;
+}

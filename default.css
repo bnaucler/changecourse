@@ -249,6 +249,7 @@ th {
 
 .rb { background-color: #DA5232; }
 .tb { background: #0C9CA1; }
+.yb { background: #FDB83F; }
 
 .teal {
     border: 4px #0C9CA1 solid;
@@ -311,7 +312,79 @@ th {
     font-size: 4em;
 }
 
+.staffimgcontainer {
+	margin: 0 30px;
+}
+
+.staffimg {
+	width: 237px;
+	height: 237px;
+	float: left;
+	position: relative;
+	margin: 0 3px;
+}
+
+.malin {
+	background: url("img/ppl/malin.png") no-repeat;
+	background-size: cover;
+}
+
+.bjorn {
+	background: url("img/ppl/bjorn.png") no-repeat;
+	background-size: cover;
+}
+
+.mattias {
+	background-color: #ccc;
+	/* background: url("img/ppl/mattias.png") no-repeat; */
+	/* background-size: cover; */
+}
+
+.imgoverlay {
+	opacity: 0;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+
+.imgoverlay:hover {
+	opacity: .85;
+}
+
+.overlaytext {
+	position: absolute;
+	width: 90%;
+	top: 70%;
+	left: 50%;
+	color: #eee;
+	text-align: center;
+	transform: translate(-50%, -50%);
+}
+
+.imgoverlay a:link, .imgoverlay a:visited {
+	color: #eee;
+}
+
+.credits {
+	display: block;
+	border: 4px #DA5232 solid;
+	border-radius: 8px;
+	background: #eee;
+	width: 230px;
+	padding: 10px;
+	text-align: center;
+	font-size: 1em;
+    z-index: 7;
+	margin: 0 auto;
+    margin-top: 100px;
+}
+
 @media only screen and (max-width: 810px) {
+
+	body {
+		background: url("img/bg.jpg") no-repeat fixed;)
+		background-size: 100% 100%;
+	}
 
     #container, .block, .mblock {
         width: 100%;
@@ -394,4 +467,16 @@ th {
         width: 80%;
         margin: 0 auto;
     }
+
+	.staffimgcontainer {
+		margin: 10px;
+		/* margin: 0 auto; */
+	}
+
+	.staffimg {
+		width: 300px;
+		height: 300px;
+		float: none;
+		margin: 0 auto 8px auto;
+	}
 }

@@ -335,9 +335,8 @@ th {
 }
 
 .mattias {
-	background-color: #ccc;
-	/* background: url("img/ppl/mattias.png") no-repeat; */
-	/* background-size: cover; */
+	background: url("img/ppl/mattias.jpg") no-repeat;
+	background-size: cover;
 }
 
 .imgoverlay {
